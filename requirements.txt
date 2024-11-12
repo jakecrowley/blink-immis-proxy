@@ -1,0 +1,4 @@
+setuptools
+objection
+mitmproxy
+argparse
