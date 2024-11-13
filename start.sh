@@ -45,4 +45,4 @@ curl -s -X POST "http://127.0.0.1:8888/rpc/invoke/androidSslPinningDisable" -H "
 python inject-tls-verify-hook.py $2 &
 
 # start mitmproxy
-mitmdump -q -s proxy.py
+mitmdump -q --set tcp_bind_ip=$1 -s proxy.py
